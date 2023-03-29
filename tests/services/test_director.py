@@ -53,3 +53,9 @@ class TestDirectorService:
             "name": "Ivan"
         }
         self.director_service.update(director_d)
+        
+    def test_partially_update(self):
+        director_d = {
+            "id": 3
+        }
+        self.director_service.partially_update(director_d)
